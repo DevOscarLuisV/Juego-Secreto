@@ -41,7 +41,7 @@ function generarNumeroSecreto() {
     let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1;
     //si ya se sorteo todo los numeros
 if(listaNumeroSorteado.length == numeroMaximo){
-asignarTextoElemento(`p`,`ya se sortearo todos los numeros posibles`);
+asignarTextoElemento(`p`,`ya se sortearo todos los numeros posibles, para vover a jugar reinicie la pagina.`);
 }else{
 
     //si el numero esta en la lista
@@ -63,7 +63,7 @@ asignarTextoElemento(`p`,`ya se sortearo todos los numeros posibles`);
 
 function condicionesIniciales(){
     asignarTextoElemento(`h1` ,  `Juego del numero secreto`);
-    asignarTextoElemento(`p` ,  `Elige un numero del 1 al ${numeroMaximo}s `);
+    asignarTextoElemento(`p` ,  `Elige un numero del 1 al ${numeroMaximo}`);
     //crear numero secreto
     numeroSecreto = generarNumeroSecreto();
     //recrear el numero de intentos
